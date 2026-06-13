@@ -1,0 +1,12 @@
+Package: tuxapk
+Version: 2.0.0
+Architecture: amd64
+Maintainer: developer
+Depends: qemu-system-x86, qemu-utils, curl, libvirt-clients
+Filename: ./tuxapk.deb
+Size: 1304
+MD5sum: ada7ce3b4816076911fdda5c0010abfa
+SHA1: d3b1d0facc5312c8e0d0bb1b5f843494ebf6c6d0
+SHA256: 7d2379e390aa05991889135a07f37445158bf4cef931253052145568462252f9
+Description: Universal Linux Android compatibility layer for heavy 3D rendering apps and games.
+
