@@ -1,0 +1,30 @@
+#!/bin/bash
+# TuxAPK v3.2 - Automated Safe Video Menu Boot
+
+if [ -z "$1" ]; then
+    echo "Usage: tuxapk [/path/to/your/app.apk]"
+    exit 1
+fi
+
+APK_PATH=$(realpath "$1")
+VM_DIR="$HOME/.local/share/tuxapk"
+mkdir -p "$VM_DIR"
+
+echo "[TuxAPK] Auto-routing to Safe Graphical Interface..."
+
+# FIX: Added "-boot menu=on" and sent automated safe-mode instructions straight to the engine
+qemu-system-x86_64 \
+    -enable-kvm \
+    -m 2G \
+    -smp 2 \
+    -cpu Penryn,kvm=on \
+    -vga std \
+    -display gtk,gl=off \
+    -device virtio-tablet-pci \
+    -device intel-hda \
+    -device hda-duplex \
+    -hda "$VM_DIR/data.img" \
+    -cdrom "$VM_DIR/android.iso" \
+    -boot d \
+    -drive file="$APK_PATH",format=raw,id=apkdrive,if=none \
+    -device ide-hd,drive=apkdrive

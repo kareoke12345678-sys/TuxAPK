@@ -1,0 +1,6 @@
+Package: tuxapk
+Version: 2.0.0
+Architecture: amd64
+Maintainer: developer
+Depends: qemu-system-x86, qemu-utils, curl, libvirt-clients
+Description: Universal Linux Android compatibility layer for heavy 3D rendering apps and games.
