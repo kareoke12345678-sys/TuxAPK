@@ -16,4 +16,4 @@ Once installed, you can launch any .apk file from any folder in your terminal:
 tuxapk your_game.apk
   Note for BlissOS Boot: When the blue/dark boot selection screen displays, press the TAB or e key depending on which one lets you edit options, clear the word quiet, type nomodeset xforcevesa DATA=, and hit Enter to jump straight into graphics mode.
                                                                    Note that it takes a while to load so please be patient.
-#3. just for your information these commands will only work if the debian community/team verifies my .deb file otherwise it WILL NOT work
+# 3. just for your information these commands will only work if the debian community/team verifies my .deb file otherwise it WILL NOT work
