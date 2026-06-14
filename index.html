@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuxAPK Repository</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0f172a; color: #f8fafc; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 10px; }
+        code { background: #1e293b; color: #38bdf8; padding: 4px 8px; border-radius: 4px; font-family: monospace; }
+        pre { background: #1e293b; padding: 15px; border-radius: 8px; overflow-x: auto; border: 1px solid #334155; }
+        .accent { color: #f43f5e; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🐧 TuxAPK</h1>
+    <p>Welcome to the official <strong>TuxAPK</strong> repository! This is a universal Android compatibility layer wrapper designed to run heavy 3D mobile rendering apps and games flawlessly on Linux systems.</p>
+    
+    <h2>🚀 Installation Instructions</h2>
+    <p>Run these commands in your Linux terminal to install TuxAPK straight from this server:</p>
+    
+    <pre><code># 1. Add this repository to your system
+echo "deb [trusted=yes] https://github.io ./" | sudo tee /etc/apt/sources.list.d/tuxapk.list
+
+# 2. Update your package manager
+sudo apt update
+
+# 3. Install TuxAPK natively
+sudo apt install tuxapk -y</code></pre>
+
+    <h2>🎮 How to Launch Apps</h2>
+    <p>Once installed, you can launch any <code>.apk</code> file from any folder in your terminal:</p>
+    <pre><code>tuxapk ~/Downloads/your_game.apk</code></pre>
+    <p><span class="accent">⚠️ Note for BlissOS Boot:</span> When the blue/dark boot selection screen displays, press the <strong>TAB key</strong>, clear the word <code>quiet</code>, type <code>nomodeset xforcevesa DATA=</code>, and hit Enter to jump straight into graphics mode.</p>
+</body>
+</html>
