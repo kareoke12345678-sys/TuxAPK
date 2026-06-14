@@ -1,4 +1,4 @@
- Please chdck out https://kareoke12345678-sys.github.io/TuxAPK/ for cleaner UI
+ Please check out https://kareoke12345678-sys.github.io/TuxAPK/ for cleaner UI
     TuxAPK
 Welcome to the official TuxAPK repository! This is a universal Android compatibility layer wrapper designed to run heavy 3D mobile rendering apps and games flawlessly on Linux systems.
 
