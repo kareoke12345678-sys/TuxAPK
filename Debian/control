@@ -1,0 +1,15 @@
+Source: tuxapk
+Section: utils
+Priority: optional
+Maintainer: kareoke12345678-sys kareoke12345678@gmail.com
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://github.io
+
+Package: tuxapk
+Architecture: arm64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A mobile 3D rendering packager engine
+ TuxAPK allows users to natively deploy, test, and render mobile 
+ application package engines directly within a command line terminal 
+ architecture environment.
